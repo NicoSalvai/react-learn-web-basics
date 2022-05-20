@@ -1,0 +1,46 @@
+
+.container-center {
+    margin: 50px auto;
+    width: 400px;
+    padding: 30px;
+    background: rgba(0, 0, 0, .5);
+    border: 3px solid #4cc9f0;
+    border-radius: 10px;
+}
+
+.container-center h2 {
+    margin: 0px 0px 30px 0px;
+    padding: 0px;
+    font-size: 30px;
+    color: #4cc9f0;
+    text-align: center;
+}
+
+.container-center .element label {
+    color: white;
+
+}
+
+.container-center .element input {
+    width: 100%;
+    padding: 10px 0px;
+    color: white;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    margin-bottom: 30px;
+}
+
+.container-center .element input:focus {
+    outline: none;
+}
+
+.container-center .element input[type="submit"] {
+    background-color: #F72585;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    padding: 15px;
+}

@@ -1,0 +1,42 @@
+table.styled-table {
+    width: 80%;
+    margin: auto 10%;
+}
+
+table.styled-table, 
+table.styled-table th, 
+table.styled-table td
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table.styled-table th
+{
+    text-align: center;
+    padding: 2px 4px 2px 4px;
+    color: #f1faee;
+    background-color: #1d3557;
+}
+table.styled-table td 
+{
+    text-align: left;
+    padding: 2px 4px 2px 4px;
+}
+
+caption {
+    color: #e63946;
+    font-family: 'Trocchi', serif;
+    font-size: 30px;
+    line-height: 50px;
+}
+
+/*renglones pares*/
+table.styled-table tr:nth-child(even){
+    background-color: #f1faee;
+}
+
+/*renglones impares*/
+table.styled-table tr:nth-child(odd){
+    background-color: #a8dadc;
+}

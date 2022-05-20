@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/homebutton.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Trocchi&display=swap" rel="stylesheet">
+    <title>Leccion05</title>
+</head>
+<body>
+    <h1>Tablas en HTML</h1>
+    <p>
+        con la etiqueta <b>&lt;table&gt;</b> declaramos una tabla 
+        <br>
+        Luego definimos cabecero y renglones:
+        <br>
+        Usamos la etiqueta <b>&lt;tr&gt;</b> para definir un nuevo <b>table row</b> osea un renglon
+        <br>
+        Usamos la etiqueta <b>&lt;th&gt;</b> dentro de una row para definir un nuevo <b>table header</b> osea un cabecero
+        <br>
+        Usamos la etiqueta <b>&lt;td&gt;</b> dentro de una row para definir un nuevo <b>table data</b> osea una celda
+        <br>
+        Las tablas tienen la property <b>border</b> que si lo valuamos en 1 crea un borde por defecto
+        <br>
+        La etiqueta <b>&lt;tbody&gt;</b> va dentro de table y es el cuerpo de la tabla pero podemos omitirla
+    </p>
+
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Juan</td>
+            <td>Perez</td>
+            <td>jperez@hotmail.com</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>Lara</td>
+            <td>malara@hotmail.com</td>
+        </tr>
+    </table>
+
+    <hr>
+    
+    <h1>Tablas en HTML con CSS</h1>
+    <p>
+        Para combinar celdas o columnas eso es posibel con los attributos <b>colspan</b> y <b>rowspan</b>
+        <br>
+        Puedo agregar un titulo con la etiqueta &lt;caption&gt; esta va justo despues de la etiqueta de table
+        <br>
+        Interesante en css puedo escoger los hijos de una etiqueta<b>tr:nth-child(even)</b> en ese caso elijo los renglones pares
+    </p>
+
+    <table class="styled-table">
+        <caption>Listado de Personas</caption>
+        <tr>
+            <th >Nombre y Apellido</th>
+            <th>Apellido</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Juan</td>
+            <td>Perez</td>
+            <td>jperez@hotmail.com</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>Lara</td>
+            <td>mlara@hotmail.com</td>
+        </tr>
+        <tr>
+            <td>Juan</td>
+            <td>Perez</td>
+            <td>jperez@hotmail.com</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>Lara</td>
+            <td>mlara@hotmail.com</td>
+        </tr>
+        <tr>
+            <td>Juan</td>
+            <td>Perez</td>
+            <td>jperez@hotmail.com</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>Lara</td>
+            <td>mlara@hotmail.com</td>
+        </tr>
+    </table>
+
+    <hr>
+    <a href="../index.html" class="homebutton">Home</a>
+</body>
+</html>

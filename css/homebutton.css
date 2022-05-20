@@ -1,0 +1,21 @@
+a.homebutton:visited, a.homebutton:link {
+    background-color: #480ca8;
+    color: white;
+    padding: 15px 10px 15px 10px;
+    margin: auto 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50% 10%;
+    border-color: #7209b7;
+    border-width: 2px;
+    border-style: solid;
+    display: inline-block;  
+}
+
+a.homebutton:active, a.homebutton:hover {
+    background-color: #B5179E;
+    border-color: #F72585;
+    border-style: double;
+    border-width: 5px;
+    padding: 12px 7px 12px 7px;
+}

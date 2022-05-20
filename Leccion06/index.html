@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leccion06</title>
+    <link rel="stylesheet" href="../css/homebutton.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Listas en HTML</h1>
+    <p>
+        En HTML tenemos listas ordenanas y no ordenadas
+        <br>
+        dentro de una lista usamos la etiqueta &lt;li&gt; dentro de esta etiqueta puedo enviar tanto un valor como otro elemento HTML, por ejemplo creando listas anidadas
+    </p>
+    
+    <h3>Listas no ordenadas &lt;ul&gt;</h3>
+    <p>
+        El icono por default es el circulo.
+        <br> podemos cambiar esto con stilos, usando el CSS <b> list-style-type</b>
+    </p>
+    <ul>
+        <li>Juan
+            <ul>
+                <li>Juan Hijo 1</li>
+                <li>Juan Hijo 2</li>
+            </ul>
+        </li>
+        <li>Carla</li>
+        <li>Maria
+            <ul>
+                <li>Maria Hija</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Listas ordenadas &lt;ol&gt;</h3>
+    <p>
+        Por defecto se le asignan numeros 
+        <br> Para elegir otra opcion usamos la propiedad <b>type</b>
+        <br> Para personalizar mas esto utilizamos CSS de esta manera <b>ol li::before</b> utlizando la propiedad content:
+        <br> En este caso vamos a automatizar un contador tambien utilizando la funcion counter()
+        <br> a esto de los :: se lo conoce como SELECTORES
+    </p>
+    <ol type="I" class="lista-rara">
+        <li>Primer elemento</li>
+        <li>Segundo elemento</li>
+        <li>Tercer elemento</li>
+    </ol>
+
+    <hr>
+    <h3>Listas de descripcion en HTML &lt;dl&gt;</h3>
+    <p>
+        En esto se agregan terminos y descripciones
+    </p>
+        Descripcion term &lt;dt&gt;
+        Description data &lt;dd&gt;
+    <dl>
+        <dt>Java:</dt>
+        <dd>Creador James Gosling</dd>
+        <dt>Python:</dt>
+        <dd>Creador Guido van Rossum</dd>
+        <dt>Javascript</dt>
+        <dd>Creador Brendan Eich</dd>
+    </dl>
+    
+    <hr>
+    <h1>Menu de navegacion utilizando listas no ordenadas</h1>
+    <a href="ejercicio1/index.html">Ejercicio</a>
+
+    <hr>
+    <a href="../index.html" class="homebutton">Home</a>
+</body>
+</html>

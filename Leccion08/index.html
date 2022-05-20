@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
+    <link rel="stylesheet" href="../css/homebutton.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Formularios en HTML</h1>
+    <p>
+        Para crear un formulario usamos la etiqueta <b>&lt;form&gt;</b>
+        <br> Para poder capturar informacion agregamos elementos del tipo <b>&lt;input&gt;</b>
+        <br> En el tenemos que agregar el atributo <b>type</b> para indicar si es numero fecha texto pwd etc
+        <br>Al definir inputs siempre deberemos definir un <b>id</b> y un atributo <b>name</b>
+        <br> Para poder enviar unformacion deberiamos tener siempre un input de <b>type="submit"</b>
+        <br> Para indicar que es cada campo se usan <b>&lt;label&gt;</b> con el atributo <b>for</b> valuado en el id del campo
+        <br> Algunos de los <b>types</b> disponibles son:
+        <br>
+        <br> En el caso de radio y checkbox <b>id = </b> - <b>name = Nombre del parametro que envio al BE (esto los agrupa para que sean autoexcluyentes)</b> <b>value = valor que se envia al server</b>
+        <br> En el caso de los select podemos usar <b>multiple</b> para que sea multiselect y <b>selected</b> para poner la opcion por default
+        <br> En el caso de querer manejar mucho texto se usa la tag <b>&lt;textarea&gt;</b>
+        <br>
+        <br> Tambien podemos poner un boton de reset con el type <b>reset</b>
+    </p>
+    <h3>Validaciones</h3>
+    <p>
+        <br> Podemos agregar validaciones sobre los formularios:
+        <br> El atribbuto <b>required="true"</b> del tag input hace que no se pueda enviar si ese campo esta vacio
+        <br>
+        <br> Se puede quitar el autocompletado con el atributo <b>autocomplete</b> seteado el false
+        <br>
+        <br> Tambien podemos hacer campos que se autocompleten y no puedan ser modificados
+    </p>
+    <h3>Metodos HTTP y acciones</h3>
+    <p>
+        Por defecto el metodo de todo formulario es un GET
+        <br> puedo cambiar el metodo de un formulario con el atributo <b>method="POST"</b> del tag <b>&lt;form&gt;</b>
+        <br> podemos usar el atributo <b>action</b> del tag <b>form</b> para indicar la URL destino de la peticion
+        <br> tambien tenemos el atributo <b>target</b> para ver donde queremos mostrar la respuesta a la peticion
+        <br>
+    </p>
+    <h3>Fieldset y Legend</h3>
+    <p>
+        <b>fieldset</b> es para encuadrar/encasillar un form 
+        <br><b>legend</b> es para dar un titulo al form en ese mismo encuadre
+    </p>
+    <div>
+        <form>
+            <fieldset>
+                <legend>Datos Usuario</legend>
+                <label for="idPersona">Persona:</label>
+                <br>
+                <input type="text" id="idPersona" name="idPersona" required="true"
+                    readonly="true" value="100">
+                <br>
+
+                <input type="hidden" id="idSecreto" name="idSecreto" required="true"
+                    readonly="true" value="secret">
+                <br>
+
+                <label for="nombre">Nombre:</label>
+                <br>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required="true">
+                <br>
+                
+                <label for="apellido">Apellido:</label>
+                <br>
+                <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido" required="true">
+                <br>
+
+                <label for="username">Username:</label>
+                <br>
+                <input type="text" id="username" name="username" placeholder="Escribe tu username" required="true">
+                <br>
+
+                <label for="email">Email:</label>
+                <br>
+                <input type="email" id="email" name="email">
+                <br>
+
+                <label for="edad">Edad:</label>
+                <br>
+                <input type="number" id="edad" name="edad">
+                <br>
+
+                <label for="password">Password:</label>
+                <br>
+                <input type="password" id="password" name="password" required="true">
+                <br>
+
+                <label>Genero</label>
+                <br>
+                <input type="radio" id="femenimo" name="genero" value="femenino">
+                <label for="femenimo">Femenimo</label>
+                <br>
+                <input type="radio" id="masculino" name="genero" value="masculino">
+                <label for="masculino">Masculino</label>
+                <br>
+
+                <label>Musica favorita</label>
+                <br>
+                <input type="checkbox" id="clasica" name="musica" value="clasica">
+                <label for="clasica">Clasica</label>
+                <br>
+                <input type="checkbox" id="rock" name="musica" value="rock">
+                <label for="rock">Rock</label>
+                <br>
+
+                <label for="autos">Marca de auto favorita</label>
+                <br>
+                <select name="autos" id="autos">
+                    <option value="honda">Honda</option>
+                    <option value="ford">Ford</option>
+                    <option value="volvo" selected="true">Volvo</option>
+                </select>
+                <br>
+
+                <label for="comentario">Comentario</label>
+                <br>
+                <textarea name="comentario" id="comentario" cols="30" rows="2"></textarea>
+                <br>
+
+
+                <br>
+                <input type="submit" id="enviar" value="Submit">
+                <input type="reset" id="reset" value="Limpiar">
+            </fieldset>
+        </form>
+    </div>
+    <hr>
+
+    <h2>Ejercicio</h2>
+    <a href="Ejercicio1/index.html">Ejercicio login</a>
+
+    <hr>
+    <a href="../index.html" class="homebutton">Home</a>
+</body>
+</html>

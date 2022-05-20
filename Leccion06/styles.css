@@ -1,0 +1,23 @@
+o.lista-rara {
+    list-style: none;
+    counter-reset: contador;
+}
+
+ol.lista-rara li {
+    counter-increment: contador;
+}
+
+ol.lista-rara li::before {
+    content: "Elemento " counter(contador) ": ";
+    color: crimson;
+}
+
+ol.lista-rara li::after {
+    content: ".";
+    color: aqua;
+}
+
+
+
+
+

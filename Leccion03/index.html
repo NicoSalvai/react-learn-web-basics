@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Leccion03</title>
+</head>
+<body>
+    <h1>CSS - Cascading Style Sheets</h1>
+    <p>
+        Se puede aplicar en tags HTML - A nivel del documento HTML - en hojas de estilo externas
+        <br>
+        con el tag &lt;link rel="stylesheet" href="styles.css"&gt; puedo configurar una hoja de stilos 
+        para no mesclar estilos con HTML
+    </p>
+
+    <h2>Titulo h2</h2>
+    <p>Parrafo comun con estilos desde stylesheet externa</p>
+    <p style="color: crimson;"> Parrafo con estilo en el tag con el attributo style="color: crimson;"</p>
+    <hr>
+    <h1>Cascadeo en CSS</h1>
+    <p>
+        Hay niveles a los cuales puede aplicarse. de padres a hijos
+        <br>
+        Por ejemplo si pongo color de fondo al body esto se aplicara a toda la pagina, incluidos todos los elementos internos
+        <br>
+        pero si uno de los elementos internos como el titulo h2 tiene otro color de fondo ese pisara al que hereda de body
+    </p>
+
+    <h3>Reglas de Cascadeo</h3>
+    <p>
+        En etiqueta HTML <b>>>></b> en tag &lt;style&gt; <b>>>></b> En stylesheet externa 
+    </p>
+    <hr>
+
+    <h1>Box Model</h1>
+
+    <p >
+        Cada etiqueta consta de - Contenido - Padding - Border - Margin
+        <br>
+        Contenido nuestro Contenido
+        <br> Padding espacio que se deja antes del Border
+        <br> Border bordes coloreados
+        <br> Margin espacio que se deja despues del Border
+    </p>
+
+    <div>
+        <p style="color: black;">texto en un div con padding</p>
+    </div>
+
+    <p>
+        Puedo especificar el tamaño de cada lado en la misma property de la siguiente forma
+        <br>
+        margin: top right bottom left
+        <br>
+        si quiero centrar un elemto puedo usar margin: auto
+        <br>
+        tambien siquiero centrarlo per dejar un margin o padding uso margin: auto <b>X</b>px
+        <br>
+        PAra alinear el texto puedo usar text-align: center
+    </p>
+
+    <hr>
+    <a href="../index.html">Home</a>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio iframes</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../../css/homebutton.css">
+</head>
+<body>
+    <h1 class="titulo">Ejercicio iframes</h1>
+    <p>
+        Podemos utilizar el tag &lt;iframe&gt; para poder incrustar otros elementos HTML
+        <br> usando el atributo src podemos incrustar texto de otra pagina html
+    </p>
+
+    <iframe src="texto.html" frameborder="0" class="marco" name="frame1"></iframe>
+
+    
+    <p>
+        Podemos usar links para activar un iframe con cierto contenido usando un <b>name</b> en el <b>iframe</b> y usando la property <b>target=name</b> en el link
+        <br> por  ejemplo
+    </p>
+    <div class="centrar">
+        <a href="texto.html" target="frame1" class="boton">Cargar texto.html</a>
+    </div>
+    <div class="centrar">
+        <a href="../../index.html" target="frame1" class="boton">Cargar index.html</a>
+    </div>
+
+    <hr>
+    <a href="../../index.html" class="homebutton">Home</a>
+    
+</body>
+</html>

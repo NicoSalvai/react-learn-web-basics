@@ -1,0 +1,8 @@
+Recommended Extensions
+    Prettier - Code formatter (Formato al codigo HTML)
+    Live Server (Ejecutar en vivo)
+    Path intellisense (Seleccion de archivos desde distintas carpetas)
+    Live Server Preview (Para Preview mientras codeamos) remover mas tarde
+
+Click derecho "Open With Live Server"
+Ctrl + Shift + P -> Live Server Preview

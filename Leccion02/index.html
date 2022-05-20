@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos basicos HTML</title>
+</head>
+<body style="height: 100%;">
+    <h1>Titulos</h1>
+    <h1>Titulo h1</h1>
+    <h2>Titulo h2</h2>
+    <h3>Titulo h3</h3>
+    <h4>Titulo h4</h4>
+    <h5>Titulo h5</h5>
+    <h6>Titulo h6</h6>
+
+    <hr>
+    <h1>Parrafos</h1>
+    <p>
+        Los parrafos no tienen 
+        saltos de linea dentro de un mismo &lt;p&gt;
+    </p>
+    <p>
+        Si quiero hacer salto 
+        <br> 
+        de linea entre parrafos uso &lt;br&gt; 
+    </p>
+    <hr>
+    <p>Para hacer una linea horizontal como la que esta arriba usamos &lt;hr&gt;</p>
+    
+    <hr>
+    <h1>Imagenes</h1>
+    <p>
+        Usamos la etiqueta &lt;img&gt; en la property <b>src</b> va el link o path a la imagen
+        <br>
+        tambien podemos usar la property <b>alt</b> para indicar un texto que se muestre si la imagen no esta disponible
+        <br>
+        tambien podemos usar la property <b>width y height</b> para especificar el tamaño
+    </p>
+    <img src="img/html5.png" alt="html5" width="100px">
+    <img src="https://www.jasoft.org/Blog/image.axd?picture=/2017/css3logo.png" alt="css3 link" width="100px">
+    <img src="img/javascript.png" alt="javascript" width="100px">
+    <img src="img/algo.png" alt="texto alternativo para imagen faltante" width="100px">
+
+    <hr>
+    <h1>Manejo de attributos</h1>
+    <p>
+        por ejemplo en casi cualquier elemento tenemos el attributo <b>title</b> para ver un titulo al pararnos sobre el
+        <br>
+        tambien podemos usar <b>style</b> para cambiar el color del texto o titulo o cualquier estilo css
+    </p>
+    <img src="img/html5.png" alt="html5" width="100px" title="imagen html5">
+    <br>
+    <p title="parrafo html5">Texto con titulo</p>
+    <p style="color: red;">texto rojo</p>
+    <pre>
+Esto es un parrafo con <b>formato preestablecido</b> que respeta los espacios 
+y saltos de linea se crea con la etiqueta     &lt;pre&gt;</pre>
+    </p>
+    
+    <hr>
+    <h1>Formato de texto</h1>
+    <p>
+        Para agregar formato a un texto &lt;p&gt; deberiamos hacerlo en CSS3 pero podemos:
+        <br>
+        Etiqueta <b>&lt;b&gt;</b> para hacer texto en negritas/bold
+        <br>
+        Etiqueta <b>&lt;strong&gt;</b> para hacer texto importante
+        <br>
+        Etiqueta <b>&lt;i&gt;</b> para hacer texto italica
+        <br>
+        Etiqueta <b>&lt;em&gt;</b> para hacer texto italica
+        <br>
+        Etiqueta <b>&lt;small&gt;</b> para hacer texto pequeño
+        <br>
+        Etiqueta <b>&lt;mark&gt;</b> para hacer texto marcado
+        <br>
+        Etiqueta <b>&lt;del&gt;</b> para hacer texto eliminado
+        <br>
+        Etiqueta <b>&lt;ins&gt;</b> para hacer texto insertado
+        <br>
+        Etiqueta <b>&lt;sub&gt;</b> para hacer texto subindice
+        <br>
+        Etiqueta <b>&lt;sup&gt;</b> para hacer texto superindice
+    </p>
+    <p><b>Texto en negrita</b></p>
+    <p><strong>Texto importante</strong></p>
+    <p><i>Texto italica</i></p>
+    <p><em>Texto enfatizado</em></p>
+    <p><small>Texto pequeño</small></p>
+    <p><mark>Texto marcado</mark></p>
+    <p><del>Texto eliminado</del></p>
+    <p><ins>Texto insertado/subrayado</ins></p>
+    <p>Texto con subindice<sub>2</sub>: H<sub>2</sub>O</p>
+    <p>Texto con superindice<sub>2</sub>: x<sup>2</sup></p>
+
+    <hr>
+    <h1>Referencias en caracteres</h1>
+    <p>
+        Etiqueta <b>&lt;code&gt;</b> se utiliza para mostrar codigo
+    </p>
+
+    <p><code>Este es mi codigo</code></p>
+
+    <p>
+        Para mostrar ciertos caracteres especiales hace falta:
+        <br>
+        Eso podemos checkearlo desde <a href="https://dev.w3.org/html5/html-author/charref">Esta pagina</a>
+        <br>
+        Por ejemplo para mostrar &lt; o &gt; debemos usar el codigo <b>&amp;lt;</b> y <b>&amp;gt;</b>
+        <br>
+    </p>
+    
+
+    <hr>
+    <h1>Links</h1>
+    <p>Para link utilizamos la etiqueta &lt;a&gt; usando la property <b>href</b> para indicar el link</p>
+    <a href="pagina1.html">Pagina 1 ejemplo</a>
+    <br>
+    <p>Si usamos la property <b>target</b> con el valor "_blank" entonces el link se abrira en una nueva pestaña</p>
+    <a href="https://www.w3schools.com/tags/ref_byfunc.asp" target="_blank">
+        References
+    </a>
+    <br>
+    <p>
+        Link hacia un email usamos el tag &lt;a&gt; con el attributo en href como mailto:nicolas.salvai95@gmail.com 
+        <br>
+        tambien podemos agregar los path query <b>?subject</b> para el asunto <b>?body</b> para el cuerpo
+    </p>
+    <a href="mailto:nicolas.salvai95@gmail.com?subject=MiCorreo&body=contenido">Enviarme un email</a>
+    <br>
+
+    <br>
+    <a href="../index.html">Home</a>
+</body>
+</html>

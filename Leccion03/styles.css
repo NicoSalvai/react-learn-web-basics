@@ -1,0 +1,24 @@
+h2 {
+    color: blue;
+}
+
+p {
+    color: rgb(102, 102, 102);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+h2 {
+    background-color: lavender;
+}
+
+div {
+    padding: 10px 0px 10px 0px;
+    border: 10px solid powderblue;
+    margin: auto 15px;
+    background-color: crimson;
+    text-align: center;
+}

@@ -1,0 +1,46 @@
+div.title h1 {
+    color: #c2f2ff;
+    font-size: 40px;
+}
+
+div.title {
+    background-color: #560bad;
+    padding: 5px 15px;
+    margin: 0px;
+    text-align: center;
+    border-bottom: 4px solid #3a0ca3;
+    border-left:  4px solid #3a0ca3;
+    border-right:  4px solid #3a0ca3;
+}
+
+ul {
+    list-style-type: none;
+    background-color: #560bad;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    border-style: double;
+    border-width: 5px;
+    border-color: #3a0ca3;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #c2f2ff;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px 20px 12px 20px;
+}
+
+li a:hover {
+    background-color: #3a0ca3;
+}
+
+li a.active {
+    background-color: #3a0ca3;
+}
+

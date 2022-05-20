@@ -1,0 +1,43 @@
+h1 {
+    color: #023047;
+}
+
+a:link {
+    color: #fb8500;
+    text-decoration: none; 
+}
+
+a:visited {
+    color: #8ecae6;
+}
+
+a:hover {
+    color: #ffb703;
+    
+    text-decoration: underline;
+}
+
+a:active {
+    color: #023047;
+    text-decoration: underline;
+}
+
+a img {
+    width: 150px;
+    height: 74px;
+}
+
+a.buttonlink:visited, a.buttonlink:link {
+    background-color: #023047;
+    color: #8ecae6;
+    padding: 15px 25px 15px 25px;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 50% 0% 50% 0%;
+    display: inline-block;
+}
+
+a.buttonlink:active, a.buttonlink:hover {
+    background-color: #fb8500;
+    color: #ffb703;
+}
